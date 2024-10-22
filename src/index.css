@@ -1,0 +1,162 @@
+:root {
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+td.hov:hover{
+  background-color: #363636;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.win{
+  color:#4e46e5b9
+}
+
+.tab{
+  margin: 0;
+  padding: 10px 0 10px 30px;
+  transition: 0.2s;
+  border-radius: 0 20px 20px 0;
+}
+
+.tab:hover{
+  background-color: #19191a;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+.tab:active{
+  opacity: 60%;
+  transition: 0;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.box{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #213547;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+@media (min-width: 768px) { /* 768px es un valor común para pantallas grandes, pero puedes ajustarlo según tus necesidades */
+  .main-page{
+    padding:5rem;
+  }
+  .container {
+      flex-direction: row; /* Alinea los elementos en una fila */
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan si hay más de 2 por fila */
+  }
+
+  .box {
+      height: 50%; /* Cada elemento ocupa el 50% de la altura */
+      width: 50%; /* Cada elemento ocupa el 50% del ancho */
+  }
+}
+
+.card h1, h2{
+  margin: 0.4rem 0 0.4rem 0;
+}
